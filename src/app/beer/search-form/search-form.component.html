@@ -1,0 +1,25 @@
+<form [formGroup]="searchForm" (submit)="search()" class="searchForm">
+ <input type="text" id="inlineFormInput" placeholder="Search By Name" formControlName="searchText" class="searchInput">
+ <input type="number" id="priceFrom" formControlName="priceFrom" placeholder="Price From" class="searchInput">
+ <input type="number" id="priceTo" formControlName="priceTo" placeholder="Price To" class="searchInput">
+ <select name="sort" formControlName="sortCriteria" class="searchSelect">
+   <option value="" disabled selected>Izaberi kriterijum sortiranja</option>
+   <option value="grade">Grade</option>
+   <option value="price">Price</option>
+   <option value="name">Name</option>
+   <option value="style">Style</option>
+   <option value="country">Country</option>
+ </select>
+ <select name="sortDirection" id="sortDirection" formControlName="sortDirection" class="searchSelect">
+   <option value="" disabled selected>Izaberi smer sortiranja</option>
+   <option value="desc">Od najveceg</option>
+   <option value="asc">Od najmanjeg</option>
+ </select>
+  <button type="submit" class="submitBtn">submit</button>
+</form>
+
+
+  
+
+
+

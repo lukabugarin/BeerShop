@@ -1,0 +1,34 @@
+.content {
+  width: 100%;
+  margin-top: 0.2em;
+  padding: 1.875em;
+  font-size: 14px;
+  text-align: justify;
+  float: left;
+  color: #000;
+}
+
+.content .topContent {
+  width: 100%;
+  margin-bottom: 1.875em;
+}
+
+.content .bottomContent {
+  width: 100%;
+  float: left;
+  margin: 0 0.5em;
+  .pagi {
+    margin-top: 2em;
+  }
+}
+
+@media screen and (max-width : 800px){
+  .content {
+    padding: 0;
+    .bottomContent {
+      margin: 0 auto;
+      float: left;
+      
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.footer {
+  color: #52b0dc;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin: 82em 2em 0 2em;
+  padding: 20px 15px;
+  &:before, &:after {
+    content: "";
+    display: table;
+}
+&:after {
+    clear: both;
+}
+  .logo {
+    border-bottom: 1px solid #52b0dc;
+    clear: both;
+  }
+  address, .map { margin: 2em;}
+  address {float: left;}
+  .map {float: right;}
+  .logo {
+    color: #52b0dc;
+    font-size: 2em;
+    span {
+      color:  #e6912c;
+    }
+  }
+}
+
+.copy {
+  background-color: #000;
+  color: #e6912c;
+  text-align: center;
+  height: 2em;
+  padding: 0.4em 0;
+}
+
+@media screen and (max-width : 1200px) {
+  .footer {
+    margin: 115em 2em 0 2em;
+    .frame {
+      width: 300px;
+      height: 250px;
+    }
+  }
+}
+
+@media screen and (max-width : 800px) {
+  .footer {
+    margin: 230em 0 0 0;
+    .logo {
+      text-align: center;
+    }
+    address {
+      float: none;
+      text-align: center;
+    }
+    .map {
+      float: none;
+      text-align: center;
+    }
+  }
+}

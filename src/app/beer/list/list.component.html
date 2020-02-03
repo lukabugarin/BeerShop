@@ -1,0 +1,18 @@
+<div class="column">
+  <h3>{{beer.name}}</h3>
+  <h4>{{beer.country}}</h4>
+  <h5>Cena: <small>{{beer.price}}</small></h5>
+  <h5>Stil: <small>{{beer.style}}</small></h5>
+  <img width="60%" height="250px" src="{{beer.image}}">
+  <div class="cart">
+    <button (click)="onBtnClick(beer)" class="cartBtn">Dodaj u korpu</button>
+  </div>
+  <!--<div class="rating">
+    <button (click)="vote(beer.grade + 1)" class="ratingBtn">+</button>
+    <button class="ratingBtn disabled" disabled>{{beer.grade}}</button>
+    <button (click)="vote(beer.grade - 1)" class="ratingBtn">-</button>
+  </div> --> 
+  <div>
+    <a class="readMore" [routerLink]="['/beers/',beer._id]">Saznaj vise..</a>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+<div class="content">
+  <div class="topContent">
+      <bs-search-form
+      (onSearch)="searchByName($event)" [beerList]="beerList">
+    </bs-search-form>
+  </div>
+   <div class="bottomContent"> 
+        <bs-list *ngFor="let beer of beerList" [beer]="beer" ></bs-list>  
+   </div>
+    <bs-pagination [totalItems]="beerCount" [pageSize]="params.pageSize"
+  (onPageSelected)="changePage($event)">
+  </bs-pagination>
+</div>
+

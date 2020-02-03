@@ -1,0 +1,13 @@
+<div class="pagi">
+  <ul>
+    <li (click)="pageSelected(activePage-1)">
+      <a >Previous</a>
+    </li>
+    <li *ngFor="let i of pages" (click)="pageSelected(i)">
+     <a >{{i}}</a>
+    </li>
+    <li (click)="pageSelected(activePage+1)">
+      <a >Next</a>
+    </li>
+  </ul>
+</div>

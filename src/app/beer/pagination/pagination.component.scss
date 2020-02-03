@@ -1,0 +1,22 @@
+.pagi {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+  
+  ul{
+    list-style-type: none;
+    text-align: center;
+    
+    li{
+      display: inline-block;
+      margin: 10px 10px;
+      color: #52b0dc;
+      
+      a:hover {
+        cursor: pointer;
+        color: #e6912c;
+      }
+    }
+   
+  }
+}

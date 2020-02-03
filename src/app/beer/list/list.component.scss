@@ -1,0 +1,88 @@
+.column {
+  width: 33%;
+  float: left;
+  padding: 15px 10px;
+  border: 1px solid #52b0dc;
+  background: rgba(0, 0, 0, 0.65);
+  text-align: center;
+  margin: 0.5em 0.1em;
+  color: #52b0dc;
+  h3 {
+    font-size: 2em;
+    padding: 5px;
+    margin-bottom: 5px;  
+  }
+  h4 {
+    font-size: 2em;
+    margin-bottom: 5px;
+  } 
+  .cart {
+    .cartBtn {
+      width: 60%;
+      background-color: rgba(0, 0, 0, 0.65);
+      color:  #52b0dc;
+      height: 40px;
+      border: 3px solid #52b0dc;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 6px;
+      margin: 10px 10px;
+    &:hover {
+      background-color: #e6912c;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    }
+  }
+  .rating {
+    .ratingBtn {
+      width: 10%;
+      background-color: rgba(0, 0, 0, 0.65);
+      color:  #52b0dc;
+      height: 40px;
+      border: 3px solid #52b0dc;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
+      border-radius: 6px;
+      margin: 10px 10px;
+    &:hover {
+      background-color: #e6912c;
+      color: rgba(0, 0, 0, 0.65);
+    }
+    }
+    .disabled:hover {
+      background-color: rgba(0, 0, 0, 0.65);
+      color:  #52b0dc;
+    }
+  }
+  p {
+    line-height: 1.2em;
+  }
+
+  a.readMore {
+    display: inline-block;
+    margin-top: 5px;
+    padding: 0 10px;
+    background:#52b0dc;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+  }
+}
+
+@media screen and (max-width : 1200px) {
+  .column {
+    width: 49%;
+
+  }
+}
+
+@media screen and (max-width : 800px) {
+  .column {
+    width: 100%;
+    
+  }
+}

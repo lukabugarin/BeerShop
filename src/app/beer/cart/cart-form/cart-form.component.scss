@@ -1,0 +1,45 @@
+h1 {
+  color: #52b0dc;
+  text-transform: uppercase;
+}
+.orderForm {
+  float: left;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+  display: block;
+  padding: 20px;
+  margin-bottom: 3em;
+  color: #52b0dc;
+  .orderInput {
+    float: left;
+    width: 75%;
+    border-radius: 6px;
+    color: #52b0dc;
+    height: 40px;
+    margin: 10px 2px;
+    padding-left: 20px;
+    border: 1px solid hsla(0,0%,100%,.65);
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  .commentText {
+    height: 6em;
+  }
+  .orderBtn {
+    width: 30%;
+    background-color: rgba(0, 0, 0, 0.65);
+    color:  #52b0dc;
+    height: 40px;
+    border: 3px solid #52b0dc;
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 6px;
+    
+    &:hover {
+      background-color: #e6912c;
+      color: rgba(0, 0, 0, 0.65);
+    }
+  }
+}

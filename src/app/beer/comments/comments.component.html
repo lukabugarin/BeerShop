@@ -1,0 +1,9 @@
+<h1>Write comment </h1>
+<bs-comment-form (addComment)="addComment($event)"></bs-comment-form>
+<div class="comments">
+  <div *ngFor="let comment of comments?.results">
+    <bs-comment [comment]="comment"></bs-comment>
+  </div>
+</div>
+
+

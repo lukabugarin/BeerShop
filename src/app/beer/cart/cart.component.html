@@ -1,0 +1,3 @@
+<bs-cart-item *ngFor="let item of itemList" [item]="item" (itemDeleted)="refreshList()"></bs-cart-item>
+<br>
+<bs-cart-form (newOrder)="newOrder($event)" ></bs-cart-form>

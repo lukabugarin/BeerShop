@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="topContent">
+      <div class="left">
+          <h1>{{beer?.name}}</h1>
+          <p>{{beer?.description}}</p>
+          <p>Stil: {{beer?.style}}</p>
+          <p>Cena: {{beer?.price}}</p>
+          <br>
+        <button (click)="onBtnClick(beer)" class="cartBtn">Dodaj u korpu</button>
+         <br>
+      </div>
+      <div class="right">
+          <img src="{{beer?.image}}" alt=""> 
+      </div>
+     
+      
+  </div>
+  <div class="bottomContent">
+    <bs-comments></bs-comments>
+  </div>
+  
+</div>
+
